@@ -5,7 +5,7 @@ Fight endlessly.
 Build your character and fight until the end.
 
 # Sketch
-Coming soon.
+https://files.slack.com/files-pri/TDBN8JUTS-FFPS4HGVD/img_0048.jpg
 
 # API's Used
 D&D5 API (for stats)
