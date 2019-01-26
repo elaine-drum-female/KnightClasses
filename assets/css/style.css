@@ -1,0 +1,8 @@
+header {
+    color: whitesmoke;
+    padding: 25px 0px;
+}
+.character, .stats {
+    margin: 0 auto;
+    padding: 100vh 225px;
+}
