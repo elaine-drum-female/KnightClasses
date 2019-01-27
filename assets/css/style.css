@@ -2,6 +2,19 @@ header {
     color: whitesmoke;
     padding: 25px 0px;
 }
+
+input {
+    margin: 5px 0px;
+}
+
+.sign-in {
+    margin-right: 10px;
+}
+
+.modal-title {
+    color: black;
+}
+
 .character, .stats {
     margin: 0 auto;
     padding: 100vh 225px;
