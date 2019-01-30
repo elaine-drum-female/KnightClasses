@@ -1,6 +1,7 @@
 header {
     color: whitesmoke;
     padding: 25px 0px;
+    text-align:center;
 }
 
 input {
@@ -17,7 +18,7 @@ input {
 
 .character, .stats {
     margin: 0 auto;
-    padding: 100vh 225px;
+    /* padding: 100vh 225px; */
 }
 
 #sign-up-status, #sign-in-status {
@@ -25,3 +26,10 @@ input {
     width: 100%;
     padding-bottom: 15px;
 }
+
+.black-text {
+    color: #000;
+}
+
+
+
