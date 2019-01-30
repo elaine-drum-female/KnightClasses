@@ -14,7 +14,7 @@
 <body>
     <header class="text-center bg-dark">
         <h1>Knight Classes</h1><br>
-        <a class="sign-in" href="#">Sign In</a>
+        <a class="sign-in" href="#" data-toggle="modal" data-target="#sign-in-modal">Sign In</a>
         <button class="btn btn-primary" data-toggle="modal" data-target='#sign-up-modal'>Sign Up</button>
         <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
@@ -25,16 +25,39 @@
                     <div class="modal-body bg-dark">
                         <form class="form-group" action="submit">
                             <div class="input-group">
-                                <input style="width: 100%" class="form-control" type="text" placeholder="Enter your email">
-                                <input style="width: 100%" class="form-control" type="password" placeholder="Enter your password">
-                                <input style="width: 100%" class="form-control" type="password" placeholder="Confirm your password">
+                                <input id="email" style="width: 100%" class="form-control" type="text" placeholder="Enter your email">
+                                <input id="password" style="width: 100%" class="form-control" type="password" placeholder="Enter your password">
+                                <input id="confirm-password" style="width: 100%" class="form-control" type="password" placeholder="Confirm your password">
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                        <button class="btn btn-primary">Sign Up</button>
+                        <button id="sign-up" class="btn btn-primary">Sign Up</button>
                     </div>
+                    <div id="sign-up-status"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sign In</h5>
+                    </div>
+                    <div class="modal-body bg-dark">
+                        <form class="form-group" action="submit">
+                            <div class="input-group">
+                                <input id="sign-in-email" style="width: 100%" class="form-control" type="text" placeholder="Enter your email">
+                                <input id="sign-in-password" style="width: 100%" class="form-control" type="password" placeholder="Enter your password">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                        <button id="sign-in" class="btn btn-primary">Sign In</button>
+                    </div>
+                    <div id="sign-in-status"></div>
                 </div>
             </div>
         </div>
