@@ -45,6 +45,119 @@ input {
     display: inline-block;
 }
 
+.battle-background {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/stills/AdobeStock_38976656_Preview.jpeg) no-repeat;
+    background-size: cover;
+    opacity:0.7;
+    /* height: 500px; */
+    background-position: center;
+}
+
+#enemy-stage {
+    position: relative;
+}
+
+span.battle-character {
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    font-size: 18px;
+    z-index: 2000;
+}
+
+.enemy-image {
+    /* max-width: 150px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    top: 110px; 
+    border:1px solid #000; */
+
+    max-width: 300px;
+    margin-left: 20px;
+    margin-top: 20px;
+    bottom: 10px;
+}
+
+.character-large {
+    position: relative;
+}
+
+.large-image {
+    max-width: 300px;
+    margin-top: 20px;
+    bottom: 10px;
+}
+
+#weapon-stage {
+    border-radius: 100%;
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cfcfcf+0,b1b1b1+100 */
+background: #cfcfcf; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #cfcfcf 0%, #b1b1b1 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #cfcfcf 0%,#b1b1b1 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #cfcfcf 0%,#b1b1b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfcfcf', endColorstr='#b1b1b1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    width: 190px;
+    padding: 5px;
+    /* height: 43%; */
+    border: 2px solid #000;
+}
+
+.weapon-image {
+    width: 119px;
+    position: relative;
+}
+
+span.user-id,
+span.enemy-id {
+    display: inline-block;
+    color: #fff;
+    font-size: 30px;
+}
+
+.span.user-id {
+    text-align: center;
+}
+
+span.topleft-hp-user,
+span.topright-hp-enemy,
+span.bottomleft-attack-user,
+span.bottomright-attack-enemy,
+span.bottomleft-defense-user,
+span.bottomright-defense-enemy {
+    padding: 0 7px;
+    color: #fff;
+}
+
+.user-hp-left-bar,
+.user-attack-bottomleft-bar,
+.user-defense-bottomleft-bar {
+    background: #ccc;
+    border: 2px solid black;
+    width: 300px;
+    height: 21px;
+    transform: skewX(-25deg);
+}
+
+.enemy-hp-right-bar,
+.enemy-attack-bottomright-bar,
+.enemy-defense-bottomright-bar {
+    background: #ccc;
+    border: 2px solid black;
+    width: 300px;
+    height: 21px;
+    transform: skewX(25deg);
+}
+
+
+.block {
+    width: 150px;
+    padding: 15px;
+    background: #ccc;
+    display: inline-block;
+}
+
 
 @media (min-width: 576px) {
     .col-5 {
