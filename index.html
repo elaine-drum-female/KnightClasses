@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
-    <title>Document</title>
+    <title>Knight Classes - An Online RPG Game</title>
 </head>
 
 <body>
@@ -26,8 +26,10 @@
                         <form class="form-group" action="submit">
                             <div class="input-group">
                                 <input id="email" style="width: 100%" class="form-control" type="text" placeholder="Enter your email">
-                                <input id="password" style="width: 100%" class="form-control" type="password" placeholder="Enter your password">
-                                <input id="confirm-password" style="width: 100%" class="form-control" type="password" placeholder="Confirm your password">
+                                <input id="password" style="width: 100%" class="form-control" type="password"
+                                    placeholder="Enter your password">
+                                <input id="confirm-password" style="width: 100%" class="form-control" type="password"
+                                    placeholder="Confirm your password">
                             </div>
                         </form>
                     </div>
@@ -48,8 +50,10 @@
                     <div class="modal-body bg-dark">
                         <form class="form-group" action="submit">
                             <div class="input-group">
-                                <input id="sign-in-email" style="width: 100%" class="form-control" type="text" placeholder="Enter your email">
-                                <input id="sign-in-password" style="width: 100%" class="form-control" type="password" placeholder="Enter your password">
+                                <input id="sign-in-email" style="width: 100%" class="form-control" type="text"
+                                    placeholder="Enter your email">
+                                <input id="sign-in-password" style="width: 100%" class="form-control" type="password"
+                                    placeholder="Enter your password">
                             </div>
                         </form>
                     </div>
@@ -72,146 +76,214 @@
                                 <header>
                                     <h2 class="card-title black-text">CHARACTER NAME</h2>
                                 </header>
-                            </div><!--col-sm-12 for character name-->
-                        </div><!--row for character name-->
+                            </div>
+                            <!--col-sm-12 for character name-->
+                        </div>
+                        <!--row for character name-->
 
                         <div id="character-helmet-slider1" class="carousel slide pointer-event" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item">
                                     <img src="assets/images/stills/HPHead_still.png" class="helmet" id="helmet_01" alt="Helmet_01">
-                                </div><!--carousel-item active helmet_01-->
+                                </div>
+                                <!--carousel-item active helmet_01-->
                                 <div class="carousel-item active">
-                                    <img src="assets/images/stills/HPHead_still.png" class="helmet" id="helmet_02" alt="Helmet_02">
-                                </div><!--carousel-item active helmet_02-->
+                                    <img src="assets/images/stills/atkHead_still.png" class="helmet" id="helmet_02" alt="Helmet_02">
+                                </div>
+                                <!--carousel-item active helmet_02-->
                                 <div class="carousel-item">
-                                    <img src="assets/images/stills/HPHead_still.png" class="helmet" id="helmet_03" alt="Helmet_03">
-                                </div><!--carousel-item active helmet_03-->
-                            </div><!--carousel inner for the character name card-->
+                                    <img src="assets/images/stills/defHead_still.png" class="helmet" id="helmet_03" alt="Helmet_03">
+                                </div>
+                                <!--carousel-item active helmet_03-->
+                            </div>
+                            <!--carousel inner for the character name card-->
                             <a class="carousel-control-prev" href="#character-helmet-slider1" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
-                            </a><!--carousel-control-prev-helmet-->
+                            </a>
+                            <!--carousel-control-prev-helmet-->
                             <a class="carousel-control-next" href="#character-helmet-slider1" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
-                            </a><!--carousel-control-next-helmet-->
-                        </div><!--character-helmet-slider-1-->
+                            </a>
+                            <!--carousel-control-next-helmet-->
+                        </div>
+                        <!--character-helmet-slider-1-->
 
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Helmet</h3>
                             </div>
-                        </div><!--Helmet card-->
+                        </div>
+                        <!--Helmet card-->
 
                         <div id="character-armor-slider2" class="carousel slide pointer-event" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/images/stills/atkBody_still.png" class="armor" id="armor_01" alt="Armor_01">
-                                </div><!--carousel-item active armor_01-->
+                                    <img src="assets/images/stills/HPBody_still.png" class="armor" id="armor_01" alt="Armor_01">
+                                </div>
+                                <!--carousel-item active armor_01-->
                                 <div class="carousel-item">
                                     <img src="assets/images/stills/atkBody_still.png" class="armor" id="armor_02" alt="Armor_02">
-                                </div><!--carousel-item active armor_02-->
+                                </div>
+                                <!--carousel-item active armor_02-->
                                 <div class="carousel-item">
-                                    <img src="assets/images/stills/atkBody_still.png" class="armor" id="armor_03" alt="Armor_03">
-                                </div><!--carousel-item active armor_03-->
-                            </div><!--carousel inner for the character armor card-->
+                                    <img src="assets/images/stills/defBody_still.png" class="armor" id="armor_03" alt="Armor_03">
+                                </div>
+                                <!--carousel-item active armor_03-->
+                            </div>
+                            <!--carousel inner for the character armor card-->
                             <a class="carousel-control-prev" href="#character-armor-slider2" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
-                            </a><!--carousel-control-prev-armor-->
+                            </a>
+                            <!--carousel-control-prev-armor-->
                             <a class="carousel-control-next" href="#character-armor-slider2" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
-                            </a><!--carousel-control-next-armor-->
-                        </div><!--character-armor-slider-2-->
+                            </a>
+                            <!--carousel-control-next-armor-->
+                        </div>
+                        <!--character-armor-slider-2-->
 
 
                         <div class="card">
                             <div class="card-body">
                                 <h2 class="card-title">Armor</h2>
                             </div>
-                        </div><!--Armor card-->
+                        </div>
+                        <!--Armor card-->
 
                         <div id="character-feet-slider3" class="carousel slide pointer-event" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item">
                                     <img src="assets/images/stills/HPFeet_still.png" class="feet" id="feet_01" alt="Feet_01">
-                                </div><!--carousel-item active feet_01-->
+                                </div>
+                                <!--carousel-item active feet_01-->
                                 <div class="carousel-item active">
-                                    <img src="assets/images/stills/HPFeet_still.png" class="feet" id="feet_02" alt="Feet_02">
-                                </div><!--carousel-item active feet_02-->
+                                    <img src="assets/images/stills/atkFeet_still.png" class="feet" id="feet_02" alt="Feet_02">
+                                </div>
+                                <!--carousel-item active feet_02-->
                                 <div class="carousel-item">
-                                    <img src="assets/images/stills/HPFeet_still.png" class="feet" id="feet_03" alt="Feet_03">
-                                </div><!--carousel-item active feet_03-->
-                            </div><!--carousel inner for the character feet card-->
+                                    <img src="assets/images/stills/defFeet_still.png" class="feet" id="feet_03" alt="Feet_03">
+                                </div>
+                                <!--carousel-item active feet_03-->
+                            </div>
+                            <!--carousel inner for the character feet card-->
                             <a class="carousel-control-prev" href="#character-feet-slider3" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
-                            </a><!--carousel-control-prev-weapon-->
+                            </a>
+                            <!--carousel-control-prev-weapon-->
                             <a class="carousel-control-next" href="#character-feet-slider3" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
-                            </a><!--carousel-control-next-feet-->
-                        </div><!--character-weapon-slider-3-->
+                            </a>
+                            <!--carousel-control-next-feet-->
+                        </div>
+                        <!--character-weapon-slider-3-->
                         <div class="card">
                             <div class="card-body">
                                 <h3 class="card-title">Feet</h3>
                             </div>
-                        </div><!--Feet card-->
+                        </div>
+                        <!--Feet card-->
 
-                        <!---ALEX ADD THE WEAPON SLIDER HERE-->
+                        <div id="character-weapon-slider4" class="carousel slide pointer-event" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item">
+                                    <img src="assets/images/stills/axe_still.png" class="weapon" id="weapon_01" alt="Axe">
+                                </div>
+                                <!-- carousel-item active weapon_01 -->
+                                <div class= 'carousel-item active'>
+                                    <img src="assets/images/stills/sword_still.png" class="weapon" id="weapon_02" alt="Sword">
+                                </div>
+                                <!--carousel-item active weapon_02-->
+                                <div class="carousel-item">
+                                    <img src="assets/images/stills/mace_still.png" class="weapon" id="weapon_03" alt="Mace">
+                                </div>
+                                <!--carousel-item active weapon_03-->
+                            </div>
+                            <!--carousel inner for the character weapon card-->
+                            <a class="carousel-control-prev" href="#character-weapon-slider3" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <!--carousel-control-prev-weapon-->
+                            <a class="carousel-control-next" href="#character-weapon-slider3" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--carousel-control-next-weapon-->
+                        </div>
+                        <!--character-weapon-slider-3-->
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Weapon</h3>
+                            </div>
+                        </div>
+                        <!--Weapon card-->
 
-                        
 
 
-                    </div><!--character jumbotron-fluid bg-light col-5-->
+                    </div>
+                    <!--character jumbotron-fluid bg-light col-5-->
 
-                        
-                    
+
+
                     <div class="stats jumbotron-fluid bg-light col-5">
-                            <div class="row">
-                                    <div class="col-sm-12">
-                                        <header>
-                                            <h2 class="card-title black-text">1. ADD YOUR STATS</h2>
-                                        </header>
-                                    </div><!--col-sm-12 for adding stats-->
-                                </div><!--row for adding stats-->
-                                <div class="stats-container">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col"></th>
-                                                <th scope="col">Attack</th>
-                                                <th scope="col">Defense</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">Stat Points</th>
-                                                <td><span class="stat-attack-points">+20</span></td>
-                                                <td><span class="stat-defense-points">+20</span></td>
-        
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Armor</th>
-                                                <td><span class="armor-attack-points">+10</span></td>
-                                                <td><span class="armor-defense-points">+2</span></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Weapon</th>
-                                                <td><span class="weapon-attack-points">+20</span></td>
-                                                <td><span class="weapon-defense-points">+20</span></td>
-                                                
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">Total</th>
-                                                <td><span class="total-attack-points">x</span></td>
-                                                <td><span class="total-defense-points">x</span></td>
-                                                
-                                            </tr>
-                                        </tbody>
-                                    </table><!--stats table-->
-                                </div><!--stats container-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <header>
+                                    <h2 class="card-title black-text">1. ADD YOUR STATS</h2>
+                                </header>
+                            </div>
+                            <!--col-sm-12 for adding stats-->
+                        </div>
+                        <!--row for adding stats-->
+                        <div class="stats-container">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">HP</th>
+                                        <th scope="col">Attack</th>
+                                        <th scope="col">Defense</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Stat Points</th>
+                                        <td><span class="stat-HP-points">+20</span></td>
+                                        <td><span class="stat-attack-points">+20</span></td>
+                                        <td><span class="stat-defense-points">+20</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Armor</th>
+                                        <td><span class="armor-HP-points">+10</span></td>
+                                        <td><span class="armor-attack-points">+10</span></td>
+                                        <td><span class="armor-defense-points">+2</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Weapon</th>
+                                        <td><span class="weapon-HP-points">+20</span></td>
+                                        <td><span class="weapon-attack-points">+20</span></td>
+                                        <td><span class="weapon-defense-points">+20</span></td>
+
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Total</th>
+                                        <td><span class="total-HP-points">x</span></td>
+                                        <td><span class="total-attack-points">x</span></td>
+                                        <td><span class="total-defense-points">x</span></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--stats table-->
+                        </div>
+                        <!--stats container-->
 
 
                     </div>

@@ -43,6 +43,7 @@ input {
 .thumbnail a>img,
 .thumbnail>img {
     display: inline-block;
+    margin: o auto;
 }
 
 
@@ -54,3 +55,4 @@ input {
     }
 
 }
+
