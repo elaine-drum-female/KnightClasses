@@ -81,40 +81,58 @@
                         </div>
                         <!--row for character name-->
 
-<div id="creation">
-    <div id='headSelect' class="pieceSelect"><hr>
-        <h4>Select your helmet</h4>
-        <img src="assets/images/stills/HPHead_still.png" class="headArmor icon" id="head_01" alt="head_01" data-name="HPhead">
-        <img src="assets/images/stills/atkHead_still.png" class="headArmor icon" id="head_02" alt="head_02"  data-name="atkhead">
-        <img src="assets/images/stills/defHead_still.png" class="headArmor icon" id="head_03" alt="head_03" data-name="defHead"><br><br>
-    </div>
-    <div id='armorSelect' class="pieceSelect"><hr>
-        <h4>Select your body armor</h4>
-        
-        <img src="assets/images/stills/HPBody_still.png" class="bodyArmor icon" id="body_01" alt="body_01" data-name="HPbody">
-        <img src="assets/images/stills/atkBody_still.png" class="bodyArmor icon" id="body_02" alt="body_02"  data-name="atkBody">
-        <img src="assets/images/stills/defBody_still.png" class="bodyArmor icon" id="body_03" alt="body_03" data-name="defBody"><br><br>
-    </div>
-    <div id='feetSelect' class="pieceSelect"><hr>
-        <h4>Select your leg armor</h4>
-        <img src="assets/images/stills/HPFeet_still.png" class="feetArmor icon" id="feet_01" alt="feet_01" data-name="HPFeet">
-        <img src="assets/images/stills/atkFeet_still.png" class="feeArmor icon" id="feet_02" alt="feet_02"  data-name="atkFeet">
-        <img src="assets/images/stills/defFeet_still.png" class="feeArmor icon" id="feet_03" alt="feet_03" data-name="defFeet"><br><br>
-    </div>
-    <div id='weaponSelectn' class="pieceSelect"><hr>
-        <h4>Select your weapon</h4>
-        <img src="assets/images/stills/axe_still.png" class="weapon icon" id="weapon_01" alt="weapon_01" data-name="axe">
-        <img src="assets/images/stills/sword_still.png" class="weapon icon" id="weapon_02" alt="weapon_02"  data-name="sword">
-        <img src="assets/images/stills/mace_still.png" class="weapon icon" id="weapon_03" alt="weapon_03" data-name="mace"><br><br>
-    </div>
-    <div id='creationConfirm'>
-        <h3 id="creationWarning">Please select all armor pieces and a weapon.</h3><br>
-        <button type="button" class="btn btn-success creation-btn">See my character!</button>
-        <button type="button" class="btn btn-danger creation-btn">Start over from scratch</button>
+                        <div id="creation">
+                            <div id='headSelect' class="pieceSelect">
+                                <hr>
+                                <h4>Select your helmet</h4>
+                                <img src="assets/images/stills/HPHead_still.png" class="headArmor icon" id="head_01"
+                                    alt="head_01" data-name="HPhead">
+                                <img src="assets/images/stills/atkHead_still.png" class="headArmor icon" id="head_02"
+                                    alt="head_02" data-name="atkhead">
+                                <img src="assets/images/stills/defHead_still.png" class="headArmor icon" id="head_03"
+                                    alt="head_03" data-name="defHead"><br><br>
+                            </div>
+                            <div id='armorSelect' class="pieceSelect">
+                                <hr>
+                                <h4>Select your body armor</h4>
 
-    </div>
+                                <img src="assets/images/stills/HPBody_still.png" class="bodyArmor icon" id="body_01"
+                                    alt="body_01" data-name="HPbody">
+                                <img src="assets/images/stills/atkBody_still.png" class="bodyArmor icon" id="body_02"
+                                    alt="body_02" data-name="atkBody">
+                                <img src="assets/images/stills/defBody_still.png" class="bodyArmor icon" id="body_03"
+                                    alt="body_03" data-name="defBody"><br><br>
+                            </div>
+                            <div id='feetSelect' class="pieceSelect">
+                                <hr>
+                                <h4>Select your leg armor</h4>
+                                <img src="assets/images/stills/HPFeet_still.png" class="feetArmor icon" id="feet_01"
+                                    alt="feet_01" data-name="HPFeet">
+                                <img src="assets/images/stills/atkFeet_still.png" class="feeArmor icon" id="feet_02"
+                                    alt="feet_02" data-name="atkFeet">
+                                <img src="assets/images/stills/defFeet_still.png" class="feeArmor icon" id="feet_03"
+                                    alt="feet_03" data-name="defFeet"><br><br>
+                            </div>
+                            <div id='weaponSelect' class="pieceSelect">
+                                <hr>
+                                <h4>Select your weapon</h4>
+                                <img src="assets/images/stills/axe_still.png" class="weapon icon" id="weapon_01" alt="weapon_01"
+                                    data-name="axe">
+                                <img src="assets/images/stills/sword_still.png" class="weapon icon" id="weapon_02" alt="weapon_02"
+                                    data-name="sword">
+                                <img src="assets/images/stills/mace_still.png" class="weapon icon" id="weapon_03" alt="weapon_03"
+                                    data-name="mace"><br><br>
+                            </div>
+                            <div id='creationConfirm'>
+                                <h3 id="creationWarning"></h3><br>
+                                <button id="create-confirm" type="button" class="btn btn-success creation-btn">See my
+                                    character!</button>
+                                <button id="start-over" type="button" class="btn btn-danger creation-btn">Start over
+                                    from scratch</button>
 
-</div>
+                            </div>
+
+                        </div>
 
 
 
@@ -177,14 +195,14 @@
                         </div>
                         <!--stats container-->
 
-                                <div class="row">
-                                    <div class="col-6">
-                                        <button class="btn btn-primary btn-lg btn-block">Save</button>
-                                    </div>
-                                    <div class="col-6">
-                                        <a href="preparation-page.html"><button class="btn btn-secondary btn-lg btn-block">Fight</button></a>
-                                    </div>
-                                </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <button id="save-character" class="btn btn-primary btn-lg btn-block">Save</button>
+                            </div>
+                            <div class="col-6">
+                                <a href="preparation-page.html"><button class="btn btn-secondary btn-lg btn-block">Fight</button></a>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
