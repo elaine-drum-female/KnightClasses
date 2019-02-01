@@ -169,3 +169,28 @@ span.bottomright-defense-enemy {
 
 }
 
+.icon {
+    width: 90px;
+    height: 90px;
+    margin: 0 25px 0 25px;
+}
+
+#creation {
+    padding: 10px;
+}
+
+.armorStatus {
+    margin: 30px 0 0 0;
+    height: 40px;
+}
+
+.creation-btn {
+    margin: 5px 10px;
+}
+
+#creationConfirm {
+    margin-top: 30px;
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 15px;
+}
