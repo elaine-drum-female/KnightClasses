@@ -12,26 +12,26 @@
 </head>
 
 <body>
-    <header class="text-center bg-dark full-dark-width battle-scene-width">
+    <header class="text-center bg-dark dark-background-block">
         <!-- <h1>Knight Classes</h1><br> -->
         <!-- <a class="sign-in" href="#">Sign In</a> -->
         <!-- <button class="btn btn-primary" data-toggle="modal" data-target='#sign-up-modal'>Sign Up</button> -->
-        <div class="modal">
+        <div class="modal result-modal">
             <div class="modal-content">
                 <div class="modal-header">
-                   <span class="closeBtn">&times;</span>
-                   <span id="result-text">You Won!</span>	 
+                    <span class="closeBtn">&times;</span>
+                    <span id="result-text">You Won!</span>
                 </div>
-                 
+
                 <!---- <div class="progress">
                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                  </div> --->
-                <div class="modal-footer">
-                   <button type="button" id="keep-fighting" class="btn btn-secondary">Keep Fighting</button>
-                   <button type="button" id="change-equipment" class="btn btn-secondary">Change Equipment</button>
-                   <button type="button" id="take-a-break" class="btn btn-secondary">Take a Break</button>
-                   <button type="button" id="new-character" class="btn btn-secondary">New Character</button>
-                   
+                <div class="modal-footer result-modal-footer">
+                    <button type="button" id="keep-fighting" class="btn btn-secondary">Keep Fighting</button>
+                    <button type="button" id="change-equipment" class="btn btn-secondary">Change Equipment</button>
+                    <button type="button" id="take-a-break" class="btn btn-secondary">Take a Break</button>
+                    <button type="button" id="new-character" class="btn btn-secondary">New Character</button>
+
                 </div>
             </div>
         </div>
@@ -63,8 +63,8 @@
                 </div>
                 <div class="col-sm-6">
 
-                        <span class="enemy-id d-flex justify-content-end">ENEMY</span>
-                      
+                    <span class="enemy-id d-flex justify-content-end">ENEMY</span>
+
 
                     <div class="d-flex justify-content-end">
                         <div class="enemy-hp-right-bar">
@@ -109,8 +109,8 @@
             <!--ATTACK BOTTOM LEFT SIDE-->
             <div class="row">
                 <div class="col-sm-6">
-                    
-                    <div class="d-flex justify-content-start">
+
+                    <!-- <div class="d-flex justify-content-start">
                         <span class="bottomleft-attack-user">Attack</span>
                         <div class="user-attack-bottomleft-bar">
                             <div class="progress">
@@ -120,9 +120,9 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col-sm-6">
+                <!-- <div class="col-sm-6">
                     <div class="d-flex justify-content-end">
                         <div class="enemy-attack-bottomright-bar">
                             <div class="progress">
@@ -133,14 +133,14 @@
                         </div>
                         <span class="bottomright-attack-enemy">Attack</span>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!--END ATTACK BOTTOM LEFT SIDE-->
 
             <!--DEFENSE SIDE-->
             <div class="row">
                 <div class="col-sm-6">
-                    <div class="d-flex justify-content-start">
+                    <!-- <div class="d-flex justify-content-start">
                         <span class="bottomleft-defense-user">Defense</span>
                         <div class="user-defense-bottomleft-bar">
                             <div class="progress">
@@ -150,10 +150,10 @@
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-sm-6">
-                    <div class="d-flex justify-content-end">
+                    <!-- <div class="d-flex justify-content-end">
                         <div class="enemy-defense-bottomright-bar">
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
@@ -162,23 +162,23 @@
                             </div>
                         </div>
                         <span class="bottomright-defense-enemy">Defense</span>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!--END DEFENSE BOTTOM LEFT SIDE-->
 
             <div class="row pt-4">
                 <div class="col-sm-12 pt-4 d-flex justify-content-center">
-                        <button type="button" class="btn btn-secondary mr-2" id="">Attack</button>
-                        <button type="button" class="btn btn-secondary mr-2" id="">Strong Attack</button>
-                        <button type="button" class="btn btn-secondary mr-2" id="">Defend</button>
-                        <button type="button" class="btn btn-secondary mr-2" id="">Focus</button>
-                        <button type="button" class="btn btn-secondary mr-2" id="">Heal</button>
-                        <button type="button" class="btn btn-secondary mr-2" id="">Axe</button>
-                        <button type="button" class="btn btn-primary mr-2" id="">Mace</button>
-                        <button type="button" class="btn btn-secondary mr-2" id="">Sword</button>
-                       
-                       
+                    <button type="button" class="btn btn-secondary mr-2" id="">Attack</button>
+                    <button type="button" class="btn btn-secondary mr-2" id="">Strong Attack</button>
+                    <button type="button" class="btn btn-secondary mr-2" id="">Defend</button>
+                    <button type="button" class="btn btn-secondary mr-2" id="">Focus</button>
+                    <button type="button" class="btn btn-secondary mr-2" id="">Heal</button>
+                    <button type="button" class="btn btn-secondary mr-2" id="">Axe</button>
+                    <button type="button" class="btn btn-primary mr-2" id="">Mace</button>
+                    <button type="button" class="btn btn-secondary mr-2" id="">Sword</button>
+
+
                 </div>
             </div>
 
