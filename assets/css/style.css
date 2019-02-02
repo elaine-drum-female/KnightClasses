@@ -4,6 +4,10 @@ header {
     text-align:center;
 }
 
+.dark-background-block {
+    /* height:100vh; */
+}
+
 input {
     margin: 5px 0px;
 }
@@ -15,39 +19,37 @@ input {
 .modal-title {
     color: black;
 }
-.modal{
+
+ .result-modal{
     display:block;
-	/* position:fixed;*/
+	/* position:fixed; */
 	z-index:1;
 	left:0;
 	top:0;
-	height: 100%;
-	width: 100%;
+	width:50%;
 	overflow: auto;
-	background-color: rgba(0,0,0,0.5);
-
+    margin: 0 auto;
 }
 
-.modal-content{
-	background-color: #c6c6cf;
-	margin: 20% auto;
-	padding:20px;
-	width: 60%;
-	box-shadow: 0 5px 8px 0 rgba(228, 194, 194, 0.2),0.7px 20px 0 rgba (0,0,0.17);
-	animation-name:modalopen;
-	animation-duration:3s;
-	display: flex;
-	flex-direction: column;
-
+.result-modal-footer {
+    display:block;
 }
-.modal-header{
-    background: #c6c6cf;
-    padding: 15px;
-    color: rgb(22, 21, 21);
+
+.modal {
+    position: relative;
+}
+
+.modal-content {
+    background: #9e9e9e;
+}
+
+.modal-title {
+    color: black;
+}
+
+.modal-header {
     display: block;
-    text-align: center;
 }
-
 
 #result-text{
 	font-size: 1.45rem;
@@ -64,6 +66,7 @@ input {
 	text-decoration: none;
 	cursor:pointer;
 }
+
 
 .character, .stats {
     margin: 0 auto;
@@ -96,7 +99,7 @@ input {
 }
 
 .battle-background {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/stills/AdobeStock_38976656_Preview.jpeg) no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/stills/bg-day.png) no-repeat;
     background-size: cover;
     opacity:0.7;
     /* height: 500px; */
