@@ -15,6 +15,55 @@ input {
 .modal-title {
     color: black;
 }
+.modal{
+    display:block;
+	/* position:fixed;*/
+	z-index:1;
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.5);
+
+}
+
+.modal-content{
+	background-color: #c6c6cf;
+	margin: 20% auto;
+	padding:20px;
+	width: 60%;
+	box-shadow: 0 5px 8px 0 rgba(228, 194, 194, 0.2),0.7px 20px 0 rgba (0,0,0.17);
+	animation-name:modalopen;
+	animation-duration:3s;
+	display: flex;
+	flex-direction: column;
+
+}
+.modal-header{
+    background: #c6c6cf;
+    padding: 15px;
+    color: rgb(22, 21, 21);
+    display: block;
+    text-align: center;
+}
+
+
+#result-text{
+	font-size: 1.45rem;
+	text-align: center;
+}
+.closeBtn{
+	color:#ccc;
+	float: right;
+	font-size: 30px;
+	color: #131111;
+}
+.closeBtn:hover,.closeBtn:focus{
+	color:#000;
+	text-decoration: none;
+	cursor:pointer;
+}
 
 .character, .stats {
     margin: 0 auto;
