@@ -97,3 +97,34 @@ $('#save-character').click(() => {
 $('#start-over').click(() => {
 
 })
+
+var trait;
+var randomName;
+
+function getTrait() {
+    let word;
+    switch (helmetType) {
+        case "atkHelmet":
+            word = "dangerous";
+        case "defHelmet":
+            word = "strong";
+        default:
+            word = "balanced";
+    }
+
+    if (word != null) {
+        var traitURL = "https://words.bighugelabs.com/api/2/a85a4a45d7751f10b8e91fe7c7255798/" + word + "/json";
+        $.ajax(traitURL).then(function (response) {
+            let jsonData = JSON.parse(response);
+            var synonym = jsonData.adjective.syn;
+            var trait = synonym[Math.floor(Math.random() * synonym.length)];
+        });
+    };
+}
+
+
+var nameURL = "https://uinames.com/api/?region=germany&gender=male&minlen=6&maxlen=13&amount=250";
+$.ajax(nameURL).then(function (response) {
+    randomName = response[Math.floor(Math.random(), response.length)].surname;
+    $('#charName').text(trait + "Knight" + randomName);
+});
