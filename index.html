@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-auth.js"></script>
     <title>Knight Classes - An Online RPG Game</title>
 </head>
 
@@ -15,7 +17,7 @@
     <header class="text-center bg-dark">
         <h1>Knight Classes</h1><br>
         <a class="sign-in" href="#" data-toggle="modal" data-target="#sign-in-modal">Sign In</a>
-        <button class="btn btn-primary" data-toggle="modal" data-target='#sign-up-modal'>Sign Up</button>
+        <button class="btn btn-primary btn-sign-up" data-toggle="modal" data-target='#sign-up-modal'>Sign Up</button>
         <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -74,7 +76,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <header>
-                                    <h2 class="card-title black-text">CHARACTER NAME</h2>
+                                    <h2 class="card-title black-text character-name">CHARACTER NAME</h2>
                                 </header>
                             </div>
                             <!--col-sm-12 for character name-->
@@ -86,9 +88,9 @@
                                 <hr>
                                 <h4>Select your helmet</h4>
                                 <img src="assets/images/stills/HPHead_still.png" class="headArmor icon" id="head_01"
-                                    alt="head_01" data-name="HPhead">
+                                    alt="head_01" data-name="HPHead">
                                 <img src="assets/images/stills/atkHead_still.png" class="headArmor icon" id="head_02"
-                                    alt="head_02" data-name="atkhead">
+                                    alt="head_02" data-name="atkHead">
                                 <img src="assets/images/stills/defHead_still.png" class="headArmor icon" id="head_03"
                                     alt="head_03" data-name="defHead"><br><br>
                             </div>
@@ -108,9 +110,9 @@
                                 <h4>Select your leg armor</h4>
                                 <img src="assets/images/stills/HPFeet_still.png" class="feetArmor icon" id="feet_01"
                                     alt="feet_01" data-name="HPFeet">
-                                <img src="assets/images/stills/atkFeet_still.png" class="feeArmor icon" id="feet_02"
+                                <img src="assets/images/stills/atkFeet_still.png" class="feetArmor icon" id="feet_02"
                                     alt="feet_02" data-name="atkFeet">
-                                <img src="assets/images/stills/defFeet_still.png" class="feeArmor icon" id="feet_03"
+                                <img src="assets/images/stills/defFeet_still.png" class="feetArmor icon" id="feet_03"
                                     alt="feet_03" data-name="defFeet"><br><br>
                             </div>
                             <div id='weaponSelect' class="pieceSelect">
@@ -125,10 +127,8 @@
                             </div>
                             <div id='creationConfirm'>
                                 <h3 id="creationWarning"></h3><br>
-                                <button id="create-confirm" type="button" class="btn btn-success creation-btn">See my
-                                    character!</button>
-                                <button id="start-over" type="button" class="btn btn-danger creation-btn">Start over
-                                    from scratch</button>
+                                <button id="create-confirm" style="width: 44.5%;" type="button" class="btn btn-success creation-btn">View Character</button>
+                                <button id="start-over" style="width: 44.5%;" type="button" class="btn btn-danger creation-btn">Start Over</button>
 
                             </div>
 
@@ -145,7 +145,7 @@
                         <div class="row">
                             <div class="col-sm-12">
                                 <header>
-                                    <h2 class="card-title black-text">1. ADD YOUR STATS</h2>
+                                    <h2 class="card-title black-text">CHARACTER STATS</h2>
                                 </header>
                             </div>
                             <!--col-sm-12 for adding stats-->
