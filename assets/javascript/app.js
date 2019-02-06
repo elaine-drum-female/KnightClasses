@@ -1,3 +1,5 @@
+// === JOSHUA BEVERLY JAVASCRIPT ===
+
 var config = {
     apiKey: "AIzaSyAZZB3ru2zE9BZixtVaqFZqKHb8SC5U1x4",
     authDomain: "knight-classes.firebaseapp.com",
@@ -258,3 +260,134 @@ $(document).ready(() => {
         else signedIn = false;
     }, 1000)
 })
+
+// === ALEX BIHM JAVASCRIPT ===
+
+var timeOfDay = 'dusk';
+
+// ======= Battle Page =======
+//I know this looks like a mess
+
+var headVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkHead.gif').attr('id', 'head');
+var bodyVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkBody.gif').attr('id', 'body');
+var weaponVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/sword.gif').attr('id', 'legs');
+var legsVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkFeet.gif').attr('id', 'legs');
+$('#playerChar').append(headVar).append(bodyVar).append(weaponVar).append(legsVar);
+$('#battle-background').addClass(timeOfDay);
+
+var headEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defHead.gif').attr('id', 'head').addClass('enemyImg');
+var bodyEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defBody.gif').attr('id', 'body').addClass('enemyImg');
+var weaponEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/mace.gif').attr('id', 'legs').addClass('enemyImg');
+var legsEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defFeet.gif').attr('id', 'legs').addClass('enemyImg');
+$('#enemyChar').append(headEnemy).append(bodyEnemy).append(weaponEnemy).append(legsEnemy);
+
+
+// ====== MVP/Presentation Code ======
+//Where moment would be used. Also it's ugly here.
+
+$(document).ready(function () {
+    //when I press 1 it does this
+    $('body').on('keydown', function (e) {
+        var pressed = e.type == "keydown";
+        if (e.which == 49) {
+            $('#playerChar').addClass('move');
+            $('#boom2').removeClass('hiddenImg');
+            $('#enemyHP').html(' <div class="progress-bar" role="progressbar" style="width: 46%;" aria-valuenow="85"aria-valuemin="0" aria-valuemax="100">46%</div>')
+        }
+
+        // when I press 2 it does this
+        if (e.which == 50) {
+            $('#playerChar').removeClass('move');
+            $('#boom2').addClass('hiddenImg');
+        }
+    });
+});
+
+
+
+$(document).ready(function () {
+    //when I press Z it does this
+    $('body').on('keydown', function (e) {
+        var pressed = e.type == "keydown";
+        if (e.which == 90) {
+            $('#battle-background').removeClass('morning').removeClass('afternoon').removeClass('dusk').removeClass('night').addClass('dawn');
+            timeOfDay = 'dawn';
+            var headVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkHead.gif').attr('id', 'head');
+            var bodyVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkBody.gif').attr('id', 'body');
+            var weaponVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/sword.gif').attr('id', 'legs');
+            var legsVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkFeet.gif').attr('id', 'legs');
+            $('#playerChar').empty().append(headVar).append(bodyVar).append(weaponVar).append(legsVar);
+            $('#battle-background').addClass(timeOfDay);
+
+            var headEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defHead.gif').attr('id', 'head').addClass('enemyImg');
+            var bodyEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defBody.gif').attr('id', 'body').addClass('enemyImg');
+            var weaponEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/mace.gif').attr('id', 'legs').addClass('enemyImg');
+            var legsEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defFeet.gif').attr('id', 'legs').addClass('enemyImg');
+            $('#enemyChar').empty().append(headEnemy).append(bodyEnemy).append(weaponEnemy).append(legsEnemy);
+        }
+        if (e.which == 88) {
+            $('#battle-background').removeClass('morning').removeClass('afternoon').removeClass('dusk').removeClass('night').addClass('morning');
+            timeOfDay = 'morning';
+            var headVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkHead.gif').attr('id', 'head');
+            var bodyVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkBody.gif').attr('id', 'body');
+            var weaponVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/sword.gif').attr('id', 'legs');
+            var legsVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkFeet.gif').attr('id', 'legs');
+            $('#playerChar').empty().append(headVar).append(bodyVar).append(weaponVar).append(legsVar);
+            $('#battle-background').addClass(timeOfDay);
+
+            var headEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defHead.gif').attr('id', 'head').addClass('enemyImg');
+            var bodyEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defBody.gif').attr('id', 'body').addClass('enemyImg');
+            var weaponEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/mace.gif').attr('id', 'legs').addClass('enemyImg');
+            var legsEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defFeet.gif').attr('id', 'legs').addClass('enemyImg');
+            $('#enemyChar').empty().append(headEnemy).append(bodyEnemy).append(weaponEnemy).append(legsEnemy);
+        }
+        if (e.which == 67) {
+            $('#battle-background').removeClass('morning').removeClass('afternoon').removeClass('dusk').removeClass('night').addClass('afternoon');
+            timeOfDay = 'afternoon';
+            var headVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkHead.gif').attr('id', 'head');
+            var bodyVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkBody.gif').attr('id', 'body');
+            var weaponVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/sword.gif').attr('id', 'legs');
+            var legsVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkFeet.gif').attr('id', 'legs');
+            $('#playerChar').empty().append(headVar).append(bodyVar).append(weaponVar).append(legsVar);
+            $('#battle-background').addClass(timeOfDay);
+
+            var headEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defHead.gif').attr('id', 'head').addClass('enemyImg');
+            var bodyEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defBody.gif').attr('id', 'body').addClass('enemyImg');
+            var weaponEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/mace.gif').attr('id', 'legs').addClass('enemyImg');
+            var legsEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defFeet.gif').attr('id', 'legs').addClass('enemyImg');
+            $('#enemyChar').empty().append(headEnemy).append(bodyEnemy).append(weaponEnemy).append(legsEnemy);
+        }
+        if (e.which == 86) {
+            $('#battle-background').removeClass('morning').removeClass('afternoon').removeClass('dusk').removeClass('night').addClass('dusk');
+            timeOfDay = 'dusk';
+            var headVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkHead.gif').attr('id', 'head');
+            var bodyVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkBody.gif').attr('id', 'body');
+            var weaponVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/sword.gif').attr('id', 'legs');
+            var legsVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkFeet.gif').attr('id', 'legs');
+            $('#playerChar').empty().append(headVar).append(bodyVar).append(weaponVar).append(legsVar);
+            $('#battle-background').addClass(timeOfDay);
+
+            var headEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defHead.gif').attr('id', 'head').addClass('enemyImg');
+            var bodyEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defBody.gif').attr('id', 'body').addClass('enemyImg');
+            var weaponEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/mace.gif').attr('id', 'legs').addClass('enemyImg');
+            var legsEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defFeet.gif').attr('id', 'legs').addClass('enemyImg');
+            $('#enemyChar').empty().append(headEnemy).append(bodyEnemy).append(weaponEnemy).append(legsEnemy);
+        }
+        if (e.which == 66) {
+            $('#battle-background').removeClass('morning').removeClass('afternoon').removeClass('dusk').removeClass('night').addClass('night');
+            timeOfDay = 'night';
+            var headVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkHead.gif').attr('id', 'head');
+            var bodyVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkBody.gif').attr('id', 'body');
+            var weaponVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/sword.gif').attr('id', 'legs');
+            var legsVar = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/atkFeet.gif').attr('id', 'legs');
+            $('#playerChar').empty().append(headVar).append(bodyVar).append(weaponVar).append(legsVar);
+            $('#battle-background').addClass(timeOfDay);
+
+            var headEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defHead.gif').attr('id', 'head').addClass('enemyImg');
+            var bodyEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defBody.gif').attr('id', 'body').addClass('enemyImg');
+            var weaponEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/mace.gif').attr('id', 'legs').addClass('enemyImg');
+            var legsEnemy = $('<img>').attr('src', 'assets/images/' + timeOfDay + '/defFeet.gif').attr('id', 'legs').addClass('enemyImg');
+            $('#enemyChar').empty().append(headEnemy).append(bodyEnemy).append(weaponEnemy).append(legsEnemy);
+        }
+    });
+});

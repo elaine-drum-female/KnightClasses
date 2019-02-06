@@ -88,10 +88,6 @@ input {
     flex:none;
 }
 
-.battle-header {
-    height: 185px;
-}
-
 
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img,
@@ -102,13 +98,38 @@ input {
     margin: o auto;
 }
 
-.battle-background {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/stills/bg-day.png) no-repeat;
-    background-size: cover;
-    opacity:0.7;
-    /* height: 500px; */
+#battle-background {
+    background-size: 100% auto;
+
     background-position: center;
+    min-height: 793px;
+    min-width: 1350px;
 }
+
+.dawn {
+    background: url(../images/dawn/castle.png) no-repeat;
+
+}
+
+.morning {
+    background: url(../images/morning/castle.png) no-repeat;
+
+}
+
+.afternoon {
+    background: url(../images/afternoon/castle.png) no-repeat;
+
+}
+
+.dusk {
+    background: url(../images/dusk/castle.png) no-repeat;
+}
+
+.night {
+    background: url(../images/night/castle.png) no-repeat;
+
+}
+
 
 #enemy-stage {
     position: relative;
@@ -250,3 +271,77 @@ span.bottomright-defense-enemy {
     padding: 20px;
     border-radius: 15px;
 }
+
+/* ====== CSS for Battle Page ======= */
+
+#head,
+#body,
+#legs {
+    position: absolute;
+}
+
+#head {
+    z-index: 2;
+}
+
+#body {
+    z-index: 1;
+}
+
+#legs {
+    z-index: 0;
+}
+
+#playerChar>img {
+    right: 35px;
+    top: 100px;
+}
+
+
+
+#enemyChar>img {
+    right: -115px;
+    top: 100px;
+    position: absolute;
+}
+
+.enemyImg {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
+}
+
+/* ====== on-attack-click styles ===== */
+
+#boom1 {
+    position: absolute;
+    top: 120px;
+    right: 200px;
+    z-index: 100;
+}
+
+#boom2 {
+    position: absolute;
+    top: 120px;
+    right: 200px;
+    z-index: 100;
+}
+
+.hiddenImg {
+    display: none;
+}
+
+/* .speedLines {
+    background-image: url('../images/speed.gif');
+
+    background-size: cover;
+} */
+
+.move {
+    -webkit-transform: translate(50rem, 0em);
+}
+
